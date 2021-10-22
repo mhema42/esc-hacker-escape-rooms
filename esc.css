@@ -1,0 +1,40 @@
+/* overall styling */
+body {
+    display: grid;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: auto;
+}
+
+a {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* top menu styling */
+.logo {
+    background-color: yellow;
+    font-size: 1rem;
+    grid-column-start: span 12;
+
+}
+
+.logo img {
+    margin-left: 0px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 60px;
+}
+
+.menu {
+    background-color: red;
+    grid-column-start: span 12;
+    grid-row-start: 2;
+    margin: auto;
+    width: auto;
+}
+
+/* challenge image styling */
+
+
