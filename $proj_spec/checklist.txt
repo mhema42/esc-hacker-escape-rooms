@@ -1,0 +1,17 @@
+[]  text describing techniques and tools
+[]  text how the code is structured
+[]  create a responsive webbdesign according to specifications
+
+
+tools
+    - IDE - Visual Studio code
+    - VCS - Github
+    - Browser - Edge and Google Chrome
+    - Color picker - Free Color Picker
+
+techniques
+    - responsiv design, grid, 
+    - 
+
+1. create a index.html with meta tag for responsiv design
+2. create a 12 column grid design

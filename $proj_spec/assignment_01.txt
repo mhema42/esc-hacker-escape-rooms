@@ -1,0 +1,34 @@
+Uppgiften
+Denna uppgift är den första delinlämningen i projektet, och utgör exmainering av kursen “Webbutveckling – HTML & CSS”.
+Uppgiften är att implementera responsiv layout och utseende på startsidan, på ett sätt som ser exakt ut som specificeras av UX-designer / formgivare.
+När uppgiften delas ut finns endast layout tillgängligt i form av wireframes. Med fyra dagar kvar till deadline kompletteras med övrig design (färger, typsnitt, exakta marginaler etc).
+Uppgiften innefattar även en skriftlig inlämning samt muntlig avstämning där studenten ska motivera val av verktyg och hur man valt att strukturera sin kod.
+
+Moment
+- Producera en responsiv webbsida enligt designspecifikation
+- Motivera skriftligt val av tekniker och verktyg
+- Beskriv skriftligt hur du strukturerat din kod
+- Delta i muntlig gruppdiskussion (bokas onsdag 27/10 eller torsdag 28/10) om tekniker, verktyg och struktur
+
+Material
+Wireframes: https://whimsical.com/esc-hacker-escape-rooms-F8mpWfqf6GYnJQs6cff1fL
+Exakt designspecifikation (publiceras här under dagen den 25 oktober)
+Inlämning
+Uppgiften lämnas in genom att publicera sidan med GitHub Pages och följande skickas in via ItsLearning:
+
+- Länk till den publika sidan (Github Pages)
+- Länk till repot där källkoden finns
+- Text där man motiverar val av tekniker och hur man strukturerat sin kod, minst ca 200 ord
+
+Betyg Godkänd
+- Källkod redovisad via GitHub
+- Sidan publicerad via Github Pages
+- Skriftlig inlämning genomförd
+- Strukturerad HTML och CSS (eller motsvarande)
+- God likhet avseende färger, typsnitt, avstånd m.m. mellan inlämnad produkt och designspecifikation
+- Deltagande i muntlig gruppdiskussion om uppgiften
+
+Betyg Väl Godkänd
+- Väl strukturerad, semantiskt korrekt HTML och CSS
+- Mycket god likhet avseende färger, typsnitt, avstånd m.m. mellan inlämnad produkt och designspecifikation
+- Väl underbyggda val av teknik och struktur

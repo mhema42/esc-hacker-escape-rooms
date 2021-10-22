@@ -1,0 +1,17 @@
+Website Brief:
+[Esc] Hacker Escape Rooms
+Kunden
+[Esc] Hacker Escape Rooms är ett företag som erbjuder en möteplats dit kompisgrupper eller kollegor kan komma för team-buildingövningar med hacker-tematik.
+De erbjuder tio “escape rooms” där deltagarna måste lösa hacking-inspirerade utmaningar och pussel för att ta sig ur rummet innan tiden går ut. Kunder bokar rum i förväg och i bokningen ingår en värd som coachar gruppen genom uppgiften och underhåller med intressanta fakta om hacking.
+Utöver rummen på plats erbjuder [Esc] också utmaningar online för en eller fler deltagare. Online-utmaningarna kan genomföras av individer närsomhelst utan kostnad, och fungerar då som marknadsföring för de betalda tjänsterna. Vissa av online-utmaningarna kan också utföras av team som då betalar och får tillgång till en värd via video.
+Projektet
+Sammanfattning
+[Esc] vill ha en hemsida för att marknadsföra sin verksamhet. Ett stort fokus ska vara på utmaningarna/rummen, som behöver gå att uppdatera i efterhand när nya rum tillkommer eller uppdateras. Företaget har ett befintligt bokningssystem med ett API, och det ska gå att boka utmaningar/rum från hemsidan.
+Övergripande krav
+- Information om alla tillgängliga utmaningar/rum ska finnas och gå att uppdatera
+- Bokningsmöjligheter på sidan, integreras med befintligt bokningssystem
+- Det ska gå att kontakta [Esc] för specialbokningar från hemsidan
+- Säljande förstasida som lockar till bokning
+- Information om företaget/berättelsen
+- Responsiv design för både dator och telefon
+- Endast ett språk, engelska
