@@ -1,0 +1,128 @@
+/* overall */
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.logo {
+    background-color: white;
+    font-size: 4rem;
+    grid-column: 1 / 13;
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 10rem;
+}
+
+.menu {
+    background-color: white;
+    font-size: 2rem ;
+    grid-column: 1 / 13;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 2rem;
+}
+
+.esc_image {
+    grid-column-start: span 12;
+    background-color:gray;
+}
+
+.esc_image img {
+    width: 100%;
+}
+
+.c_button {
+    grid-column: 4 / 10;
+    background-color: red;
+}
+
+.t_card_1 {
+    grid-column: 4 / 6;
+    background-color: green
+}
+
+.t_card_2 {
+    grid-column: 7 / 9;
+    background-color: red;
+}
+
+.pop_ch {
+    grid-column-start: span 12;
+    background-color: green;
+}
+
+.challenge_cards {
+    display: flex;
+    grid-column-start: span 12;
+    background-color: red;
+}
+
+.challenge_cards img {
+    width: 100%;
+}
+
+.all_c_button {
+    grid-column: 4 / 10;
+    background-color: green;
+}
+
+.story {
+    grid-column: 1 /13;
+    background-color: red;
+}
+
+.story_button {
+    grid-column: 1 / 13;
+    background-color: green;
+}
+
+.play_cards img {
+    width: 100%;
+}
+
+.play_cards {
+}
+
+.play_card_img {
+    grid-column: 1 / 7;
+    background-color: red;
+}
+
+.play_card_txt {
+    grid-column: 7 / 13;
+    background-color: green;
+}
+
+.footer_esc {
+    grid-column: 1 / 7;
+    background-color: red;
+}
+
+.footer_contacts_01 {
+    grid-column: 7 / 10;
+    background-color: green;
+}
+
+.footer_contacts_02 {
+    grid-column: 10 / 13;
+    background-color: red;
+}
