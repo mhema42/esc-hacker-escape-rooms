@@ -1,12 +1,42 @@
 /* overall */
 * {
+    color:white;
     text-decoration: none;
-    color: rgb(43, 42, 42);
 }
 
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "roboto";
     font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+img {
+    width: 100%;
+} 
+
+.primary_button, .secondary_button{
+    border-radius: 0.2rem;
+    bottom: 1.5rem;
+    color: white;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+}
+
+.primary_button {
+    background-color: #E3170A;
+}
+
+.secondary_button {
+    background-color: #8ACFE5;
+
 }
 
 @media screen and (max-width: 500px) {
@@ -16,129 +46,121 @@ html {
 }
 
 /* header */
-.logo img {
-    grid-column: 1 / 1;
-    width: 10rem;
-    vertical-align: middle;
+header {
+    background-color: #011827;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.esc_txt {
-    align-items: center;
-    display: flex;
-    font-size: 3rem;
-    grid-column: 2 / 3;
+header a {
+
 }
 
-.hacker_txt {
-    align-items: center;
-    display: flex;
-    font-size: 3rem;
-    grid-column: 3 / 7;
+header img {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    vertical-align: bottom;
+    width: 128px;
 }
-
 
 @media screen and (max-width: 500px) {
-    .logo img {
-        grid-column: 1 / 1;
-        width: 6rem;
-        position: relative;
-        left: 10px;
+    header {
+        display: flex;
+        height: 100%;
     }
 
-    .esc_txt {
-        font-size: 2rem;
-        grid-column: 3 / 4;
-        left: 8px;
-        position: relative;
-        top: -5px;
+    header img {
+        vertical-align: bottom;
+        width: 100px;
     }
 
-    .hacker_txt {
-        font-size: 1rem;
-        grid-column: 3 / 8;
-        left: 8px;
-        position: relative;
-        top: -15px;
+    header a {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    header :nth-child(2) {
+        font-size: 3.5rem;
+        margin-left: 5px;
+        margin-top: 30px;
+        width: 100px;
     }
 }
 
 /* navigation bar */
 nav {
-    grid-column: 1 / 11;
-    background-color: white;
-    font-size: 2rem ;
-    text-align: center;
+    background-color: #011827;
+    font-size: 24px ;
+    font-weight: bold;
 }
 
-nav a {
+nav ul {
+    margin: auto;
+    width: 1100px;
+}
+
+nav li {
     display: inline-block;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
 }
 
 @media screen and (max-width: 500px) {
     nav a {
         display: none;
     }
+
+    nav ul {
+        margin: auto;
+        width: auto;
+    }
 }
 
 /* esc image and challenge buttons */
-main {
+.hero {
     text-align: center;
 }
 
-main img {
+.hero img {
     width: 100%;
 }
 
-main a {
-    background-color: #6558F5;
-    border-radius: 0.2rem;
-    bottom: 2.5rem;
-    color: white;
-    font-size: 1.8rem;
-    margin-right: 1rem;
-    padding: 1rem;
-    padding-left: 2rem;
-    position: relative;
+.hero a {
+
 }
 
 @media screen and (max-width: 500px) {
-    main a {
+    .hero a {
         display: block;
         margin: auto;
         padding: 0.6rem;
         padding-left: 1.5rem;
         width: 15rem;
     }
-    main :nth-child(2) {
+    .hero :nth-child(2) {
         background-color: white;
         color: #6558F5;
         top: 6px;   
     }
 
-    main :nth-child(3) {
+    .hero :nth-child(3) {
         color: white;
         top: -28px;   
     }
 }
 
 /* testimonials */
-article {
+.quote {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: auto;
-}
-
-.testimonial_01, .testimonial_02 {
     font-size: 1.5rem;
-    margin-top: 3rem;
+    margin: auto;
     width: 35rem;
 }
 
-.testimonial_01 img, .testimonial_02 img {
+.quote img {
     width: 8rem;
     height: 8rem;
 }
@@ -172,17 +194,17 @@ article {
 
 .all_c_button {
     grid-column: 4 / 10;
-    background-color: green;
+
 }
 
 /* story */
 .story {
     grid-column: 1 / 11;
-    background-color: red;
+
 }
 
 .story a {
-    background-color: green;
+
 }
 
 /* play */
