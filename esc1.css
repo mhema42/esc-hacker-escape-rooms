@@ -341,3 +341,48 @@ right: 10px;
     text-align: center;
     width: 302px;
 }
+
+/* play */
+.play {
+    width: 1280px;
+}
+
+.play01 img, .play02 img {
+    height: 460px;
+    width: 640px;
+}
+
+.play01 {
+    background-color: white;
+    display: flex;
+
+}
+
+.play01_txt {
+    margin-left: 116px;
+    margin-right: 115px;
+    width: 640px;
+}
+
+.play02 {
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.play02_txt {
+    margin-left: 116px;
+    margin-right: 115px;
+    width: 640px;
+}
+
+.play01_txt p, .play02_txt p {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.play01_txt h2, .play02_txt h2 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
