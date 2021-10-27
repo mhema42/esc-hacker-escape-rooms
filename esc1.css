@@ -153,7 +153,7 @@ nav a {
     display: inline-block;
 }
 
-.primary_button, .secondary_button{
+.hero .primary_button, .hero .secondary_button{
     bottom: 2rem;
     position: relative;
 }
@@ -227,11 +227,23 @@ nav a {
 }
 
 .popular li {
-    text-align: left;
-    display: inline-block;
     border-radius: 8px;
-    border-style: solid;
+    box-shadow: 0px 2px 8px lightgray;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
     width: 363px;
+}
+
+.popular li :nth-child(4), .star {
+    display: inline;
+    font-size: 14px;
+    margin-right: 0px;
+}
+
+.popular p {
+    font-size: 18px;
+    margin: 18px;
 }
 
 .popular img {
@@ -240,24 +252,32 @@ nav a {
 }
 
 .popular h2 {
-    margin-top: 5px;
     font-size: 28px;
     font-weight: 400;
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-left: 20px;
     }
 
-.star li {
-    display: inline;
+.star {
     border-style: none;
-    margin-left: 14px;
+    display: inline;
+    margin-right: 100px;
+    margin-left: 15px;
+}
+
+.star li {
+    border-style: none;
+    box-shadow: none;
+    display: inline;
+    margin: 3px;
 }
 
 .star li img {
-width: 23px;
-height: 26px;
+    height: 15px;
+    width: 15px;
 }
 
-
-
-.popular a {
-    text-align: center;
+.popular .primary_button, .popular .secondary_button {
+    top: 100px;
 }
