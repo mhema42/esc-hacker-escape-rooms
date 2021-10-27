@@ -1,12 +1,13 @@
 /* overall */
 * {
-    color:white;
+    color: black;
     text-decoration: none;
 }
 
 html {
+    background-color: gray;
     font-family: "roboto";
-    font-size: 15px;
+    font-size: 24px;
 }
 
 ul {
@@ -14,59 +15,69 @@ ul {
     padding-left: 0px;
 }
 
-img {
-    width: 100%;
-} 
-
 .primary_button, .secondary_button{
-    border-radius: 0.2rem;
-    bottom: 1.5rem;
-    color: white;
-    font-size: 1.8rem;
-    margin: 0.5rem;
-    padding: 1rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    position: relative;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0rem;
+    padding: 0.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2rem;
+    width: 308px;
 }
 
 .primary_button {
     background-color: #E3170A;
+    color: white;
+}
+
+.primary_button_dark {
+    background-color: transparent;
+    border-color: #8ACFE5;
+    border-style: solid;
+    color: #8ACFE5;
 }
 
 .secondary_button {
     background-color: #8ACFE5;
-
+    color: #011827;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     html {
         font-size: 5px;
+        width: auto;
     }
+}
+
+.container {
+    margin: auto;
+    max-width: 1280px;
+
+
 }
 
 /* header */
 header {
     background-color: #011827;
     font-size: 40px;
-    font-weight: bold;
-}
-
-header a {
-
+    font-weight: 700;
 }
 
 header img {
-    margin-left: 1rem;
+    margin-left: 1.2rem;
     margin-top: 1rem;
     vertical-align: bottom;
     width: 128px;
 }
 
-@media screen and (max-width: 500px) {
+header a {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
     header {
         display: flex;
-        height: 100%;
     }
 
     header img {
@@ -75,39 +86,44 @@ header img {
     }
 
     header a {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 
     header :nth-child(2) {
         font-size: 3.5rem;
-        margin-left: 5px;
-        margin-top: 30px;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
         width: 100px;
     }
 }
 
 /* navigation bar */
 nav {
+    align-content: center;
+    display: flex;
     background-color: #011827;
-    font-size: 24px ;
-    font-weight: bold;
+    text-align: center;
+
 }
 
 nav ul {
-    margin: auto;
-    width: 1100px;
+    width: 1280px;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 3rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 1rem;
     padding: 1.5rem;
 }
 
-@media screen and (max-width: 500px) {
+nav a {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
     nav a {
         display: none;
     }
@@ -118,125 +134,130 @@ nav li {
     }
 }
 
-/* esc image and challenge buttons */
+/* hero and challenge buttons */
 .hero {
+    background-color: white;
     text-align: center;
+}
+
+.hero ul {
+    margin-bottom: 0px;
+    padding-bottom: 50px;
 }
 
 .hero img {
     width: 100%;
 }
 
-.hero a {
-
+.hero li {
+    display: inline-block;
 }
 
-@media screen and (max-width: 500px) {
-    .hero a {
+.primary_button, .secondary_button{
+    bottom: 2rem;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .hero li {
         display: block;
         margin: auto;
         padding: 0.6rem;
-        padding-left: 1.5rem;
         width: 15rem;
     }
-    .hero :nth-child(2) {
-        background-color: white;
-        color: #6558F5;
-        top: 6px;   
-    }
 
-    .hero :nth-child(3) {
-        color: white;
-        top: -28px;   
+    .primary_button {
+        background-color: white;
+        color: #8ACFE5;
+        text-decoration: underline;
+        position: relative;
+        top: 4.5rem;
     }
 }
 
 /* testimonials */
 .quote {
+    background-color: white;
+}
+
+.quote ul {
     display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
     margin: auto;
-    width: 35rem;
+    width: 1080px;
 }
 
 .quote img {
-    width: 8rem;
-    height: 8rem;
+    float: left;
+    height: 107px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 96,26px;
 }
 
-@media screen and (max-width: 500px) {
-    .testimonial_01 {
-    width: 33rem;
-    }
+.quote em, .quote p {
+    bottom: 30px;
+    position: relative;
+}
 
-    .testimonial_02 {
+.quote p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .quote ul :nth-child(2) {
         display: none;
     }
 }
 
-
-/* challenges */
-.pop_ch {
-    grid-column: 1 / 11;
-    background-color: green;
+/* popular challenges */
+.popular {
+    background-color: white;
+    text-align: center;
 }
 
-.challenge_cards {
-    grid-column: 1 / 11;
-    background-color: red;
-    display: flex;
+.popular h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 0px;
 }
 
-.challenge_cards img {
-    width: 100%;
+.popular ul {
+    margin-top: 70px;
 }
 
-.all_c_button {
-    grid-column: 4 / 10;
-
+.popular li {
+    text-align: left;
+    display: inline-block;
+    border-radius: 8px;
+    border-style: solid;
+    width: 363px;
 }
 
-/* story */
-.story {
-    grid-column: 1 / 11;
-
+.popular img {
+    height: 219px;
+    width: 363px;
 }
 
-.story a {
+.popular h2 {
+    margin-top: 5px;
+    font-size: 28px;
+    font-weight: 400;
+    }
 
+.star li {
+    display: inline;
+    border-style: none;
+    margin-left: 14px;
 }
 
-/* play */
-.play_cards {
-    grid-column: 1 / 11;
+.star li img {
+width: 23px;
+height: 26px;
 }
 
-.play_cards img {
-    width: 100%;
-}
 
-.play_card_img {
-    grid-column: 1 / 7;
-    background-color: red;
-}
 
-.play_card_txt {
-    grid-column: 7 / 11;
-    background-color: green;
-}
-
-.footer_esc {
-    grid-column: 1 / 7;
-    background-color: red;
-}
-
-.footer_contacts_01 {
-    grid-column: 7 / 10;
-    background-color: green;
-}
-
-.footer_contacts_02 {
-    grid-column: 10 / 11;
-    background-color: red;
+.popular a {
+    text-align: center;
 }

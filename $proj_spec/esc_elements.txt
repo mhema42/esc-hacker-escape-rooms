@@ -1,11 +1,52 @@
-top menu
-    Home button/text
-    top menu bar/button
-challenge image
-buttons
-testimonal
-chalenges cards
-buttons
-story
-images + play options
+header
+    <a> element for logo and text
+
+nav
+    <ul>
+        <a> elements for navigation on site
+
+div (hero)
+    <img> hacker
+    <ul>
+        <a> book room/challange
+
+article (quote)
+    <ul>
+        <img> face
+        <em> quote
+        <p> name
+
+div (popular)
+    <h1>
+    <ul> 3 challenge cards 
+        <img> hacker
+        <h2> titles
+        <ul>
+            <img> rating stars
+        <p> text
+        <a> book room/challange
+    <a> to lists of rooms/challanges
+
+article (story)
+    <p> text
+    <a> longer text
+
+div (play)
+    <ul> 2 challange cards
+        <img>
+        <h2> text
+        <a> book room/challange
+        
 footer
+    <h3> 
+    <p> text about
+    <h3> text site map
+    <a> story
+    <a> contact
+    <a> legal
+    <a> play online
+    <a> play on-site
+    <h3> social media
+    <a> facebook
+    <a> instagram
+    <a> youtube

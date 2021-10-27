@@ -14,4 +14,3 @@ techniques
     - 
 
 1. create a index.html with meta tag for responsiv design
-2. create a 12 column grid design
