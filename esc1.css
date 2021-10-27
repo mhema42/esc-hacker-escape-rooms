@@ -15,16 +15,20 @@ ul {
     padding-left: 0px;
 }
 
-.primary_button, .secondary_button{
+.primary_button, .secondary_button {
     border-radius: 4px;
-    font-size: 1rem;
     font-weight: 700;
-    margin: 0rem;
-    padding: 0.8rem;
-    padding-left: 2.4rem;
-    padding-right: 2rem;
-    width: 308px;
+    margin: 5px;
+    padding: 20px;
+    padding-left: 58px;
+    padding-right: 58px;
 }
+
+.secondary_button {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
 
 .primary_button {
     background-color: #E3170A;
@@ -43,7 +47,7 @@ ul {
     color: #011827;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     html {
         font-size: 5px;
         width: auto;
@@ -62,20 +66,24 @@ header {
     background-color: #011827;
     font-size: 40px;
     font-weight: 700;
+    margin: 0px;
 }
 
 header img {
-    margin-left: 1.2rem;
-    margin-top: 1rem;
+    margin-left: 25px;
+    margin-top: 25px;
     vertical-align: bottom;
     width: 128px;
 }
 
-header a {
+header :nth-child(2) {
     color: white;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     header {
         display: flex;
     }
@@ -86,8 +94,8 @@ header a {
     }
 
     header a {
-        margin-top: 1rem;
-        margin-left: 1rem;
+        margin-top: 15px;
+        margin-left: 15px;
     }
 
     header :nth-child(2) {
@@ -103,27 +111,28 @@ nav {
     align-content: center;
     display: flex;
     background-color: #011827;
+    padding-top: 35px;
     text-align: center;
-
 }
 
 nav ul {
+    margin: 0px;
     width: 1280px;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    margin-top: 1rem;
-    padding: 1.5rem;
+    margin: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 20px;
 }
 
 nav a {
     color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     nav a {
         display: none;
     }
@@ -158,7 +167,7 @@ nav a {
     position: relative;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .hero li {
         display: block;
         margin: auto;
@@ -178,6 +187,7 @@ nav a {
 /* testimonials */
 .quote {
     background-color: white;
+    padding-top: 50px;
 }
 
 .quote ul {
@@ -187,16 +197,18 @@ nav a {
 }
 
 .quote img {
+    position: relative;
+    bottom: 12px;
     float: left;
     height: 107px;
     margin-bottom: 120px;
     margin-left: 50px;
-    margin-right: 20px;
+    margin-right: 15px;
     width: 96,26px;
 }
 
 .quote em, .quote p {
-    bottom: 30px;
+    bottom: 45px;
     position: relative;
 }
 
@@ -204,15 +216,18 @@ nav a {
     font-size: 18px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .quote ul :nth-child(2) {
         display: none;
     }
+
+
 }
 
 /* popular challenges */
 .popular {
     background-color: white;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -220,30 +235,7 @@ nav a {
     font-size: 36px;
     font-weight: 400;
     margin-top: 0px;
-}
-
-.popular ul {
-    margin-top: 70px;
-}
-
-.popular li {
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px lightgray;
-    display: inline-block;
-    margin: 10px;
-    text-align: left;
-    width: 363px;
-}
-
-.popular li :nth-child(4), .star {
-    display: inline;
-    font-size: 14px;
-    margin-right: 0px;
-}
-
-.popular p {
-    font-size: 18px;
-    margin: 18px;
+    margin-bottom: 80px;
 }
 
 .popular img {
@@ -254,30 +246,98 @@ nav a {
 .popular h2 {
     font-size: 28px;
     font-weight: 400;
-    margin: 5px;
+    margin: 3px;
     margin-bottom: 0px;
     margin-left: 20px;
     }
 
+.popular li {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px lightgray;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    width: 363px;
+}
+
 .star {
-    border-style: none;
     display: inline;
-    margin-right: 100px;
     margin-left: 15px;
+    margin-right: 92px;
 }
 
 .star li {
-    border-style: none;
+    border: none;
     box-shadow: none;
     display: inline;
     margin: 3px;
 }
 
-.star li img {
+.star img {
     height: 15px;
     width: 15px;
 }
 
+.popular li :nth-child(4), .star {
+    display: inline;
+    font-size: 14px;
+}
+
+.popular p {
+    font-size: 18px;
+    margin: 18px;
+}
+
+.small_button {
+bottom: 10px;
+background-color: #E3170A;
+border-radius: 4px;
+color: white;
+float: right;
+font-size: 16px;
+font-weight: 700;
+margin-top: 10px;
+padding: 12px;
+padding-left: 35px;
+padding-right: 35px;
+position: relative; 
+right: 10px;
+}
+
 .popular .primary_button, .popular .secondary_button {
-    top: 100px;
+    position: relative;
+    top: 70px;
+}
+
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 32px;
+    } 
+}
+
+/* story */
+.story {
+    background-color: #011827;
+    padding-bottom: 112px;
+    padding-top: 112px;
+}
+
+.story p {
+    color: white;
+    font-size: 28px;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+}
+
+.story a {
+    border-style: solid;
+    color: #8ACFE5;
+    display: block;
+    height: 60px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 0px;
+    text-align: center;
+    width: 302px;
 }
