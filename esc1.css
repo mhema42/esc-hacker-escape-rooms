@@ -171,8 +171,7 @@ nav a {
     .hero li {
         display: block;
         margin: auto;
-        padding: 0.6rem;
-        width: 15rem;
+
     }
 
     .primary_button {
@@ -229,6 +228,7 @@ nav a {
     background-color: white;
     padding-bottom: 200px;
     text-align: center;
+    width: 1280px;
 }
 
 .popular h1 {
@@ -344,6 +344,7 @@ right: 10px;
 
 /* play */
 .play {
+    margin-bottom: 0px;
     width: 1280px;
 }
 
@@ -385,4 +386,41 @@ right: 10px;
     font-size: 32px;
     margin-top: 60px;
     margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #011827;
+    display: flex;
+    margin: 0px;
+    width: 1280px;
+}
+
+footer h3, footer p, footer a {
+    margin-top: 0px;
+    color: white;
+}
+
+.about {
+    margin: 150px;
+    margin-bottom: 185px;
+    margin-left: 110px;
+    width: 440px;
+}
+
+.site_map, .social_media {
+    margin-left: 55px;
+    margin-right: 70px;
+    margin-top: 150px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+footer {
+    font-size: 18px;
+    font-weight: 400;
 }
