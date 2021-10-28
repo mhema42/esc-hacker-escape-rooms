@@ -58,7 +58,9 @@ ul {
 
 @media screen and (max-width: 1312px) {
 body {
-    background-color: #011827;
+    background-color: gray;
+    /*
+    background-color: #011827; */
 }
 }
 
@@ -143,17 +145,6 @@ nav a {
     }
 }
     
-    /*
-    nav a {
-        display: none;
-    }
-
-    nav ul {
-        margin: auto;
-        width: auto;
-    } */
-
-
 /* hero and challenge buttons */
 .hero {
     background-color: white;
@@ -196,10 +187,16 @@ nav a {
 
     .hero .primary_button {
         background-color: white;
-        color: #8ACFE5;
-        text-decoration: underline;
+        color: #36769d;
+        font-size: 16px;
+        font-weight: 700;
         position: relative;
-        top: 40px;
+        text-decoration: underline;
+        top: 100px;
+    }
+
+    .hero .secondary_button {
+        bottom: 0px;
     }
 
 }
@@ -267,8 +264,7 @@ nav a {
         position: relative;
         left: 80px;
     }
-
-
+}
 
 /* popular challenges */
 .popular {
