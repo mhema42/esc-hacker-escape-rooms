@@ -10,6 +10,10 @@ html {
     font-size: 24px;
 }
 
+body {
+    background-color: gray;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0px;
@@ -50,6 +54,12 @@ ul {
 .container {
     margin: auto;
     max-width: 1280px;
+}
+
+@media screen and (max-width: 1312px) {
+body {
+    background-color: #011827;
+}
 }
 
 /* header */
@@ -105,7 +115,6 @@ nav {
     display: flex;
     background-color: #011827;
     padding-top: 55px;
-
     text-align: center;
 }
 
@@ -127,7 +136,14 @@ nav a {
     color: white;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 950px) {
+    nav li {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+    
+    /*
     nav a {
         display: none;
     }
@@ -135,8 +151,8 @@ nav a {
     nav ul {
         margin: auto;
         width: auto;
-    }
-}
+    } */
+
 
 /* hero and challenge buttons */
 .hero {
@@ -166,7 +182,6 @@ nav a {
     .hero li {
         display: block;
         margin: auto;
-
     }
 
     .primary_button {
@@ -356,14 +371,21 @@ right: 10px;
     right: 10px;
     }
 
+@media screen and (max-width: 1312px) {
+    .story {
+        margin: auto;
+        width: 640px;
+    }
+}
+
 /* play */
 .play {
     margin-bottom: 0px;
 }
 
 .play01 img, .play02 img {
-    height: 460px;
-    width: 640px;
+    max-height: 460px;
+    max-width: 640px;
 }
 
 .play01 {
@@ -374,7 +396,7 @@ right: 10px;
 .play01_txt {
     margin-left: 116px;
     margin-right: 115px;
-    width: 640px;
+    max-width: 640px;
 }
 
 .play02 {
@@ -386,7 +408,7 @@ right: 10px;
 .play02_txt {
     margin-left: 116px;
     margin-right: 115px;
-    width: 640px;
+    max-width: 640px;
 }
 
 .play01_txt p, .play02_txt p {
@@ -398,6 +420,24 @@ right: 10px;
     font-size: 32px;
     margin-top: 60px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1312px) {
+    /* .play {
+        background-color: white;
+    } */
+    
+    .play01, .play02 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 640px;
+    } 
+
+    .play01_txt, .play02_txt {
+        height: 400px;
+        margin: 10px;
+    }
 }
 
 /* footer */
@@ -434,4 +474,29 @@ footer h3 {
 footer {
     font-size: 18px;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1312px) {
+    footer {
+        flex-direction: column;
+        margin: auto;
+        max-width: 640px;
+    }
+
+    footer p {
+        margin: 0px;
+    }
+
+    .about h3 {
+        margin-top: 45px;
+    }
+
+    .about, .site_map, .social_media {
+        margin: 18px;
+    }
+
+    .social_media {
+        margin-bottom: 65px;
+    }
+
 }

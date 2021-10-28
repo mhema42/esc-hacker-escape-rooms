@@ -1,6 +1,8 @@
 Meta
      <meta charset="UTF-8" /> teckenuppsättning från HTML5 och senare
      <meta http-equiv="X-UA-Compatible" content="IE=edge" /> support för IE8 + 9?
+     link to fonts
+     link to css
 
 div (container)
     set width on all content and center
