@@ -571,8 +571,6 @@ nav a {
     .play02 {
         padding-bottom: 40px;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
@@ -587,6 +585,10 @@ nav a {
     .play .primary_button {
         padding-left: 45px;
         padding-right: 45px;
+    }
+
+    .play01 {
+        padding-bottom: 50px;
     }
 
 }
