@@ -66,6 +66,11 @@ ul {
     body {
         background-color: gray;
     }
+
+    .container {
+        margin: auto;
+        max-width: 640px;
+    }
 }
 
 /* header */
@@ -96,7 +101,6 @@ header :nth-child(2) {
     header {
         display: flex;
         margin: auto;
-        max-width: 640px;
     }
 
     header img {
@@ -148,7 +152,6 @@ nav a {
 @media screen and (max-width: 1312px) {
     nav {
         margin: auto;
-        max-width: 640px;
         padding-top: 25px;
     }
 
@@ -172,12 +175,6 @@ nav a {
 
     nav ul {
         margin-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header {
-        max-width: 480px;
     }
 }
     
@@ -212,11 +209,6 @@ nav a {
 }
 
 @media screen and (max-width: 1312px) {
-    .hero {
-        margin: auto;
-        max-width: 640px;
-    }
-
     .hero img {
         background-color: #011827;
         object-fit: cover;
@@ -305,11 +297,6 @@ nav a {
 }
 
 @media screen and (max-width: 1312px) {
-    .quote {
-        margin: auto;
-        max-width: 640px;
-    }
-
     .quote img {
         height: 72px;
         position: relative;
@@ -349,7 +336,6 @@ nav a {
     background-color: white;
     padding-bottom: 200px;
     margin: auto;
-    max-width: 1312px;
     text-align: center;
 }
 
@@ -361,8 +347,7 @@ nav a {
 }
 
 .popular img {
-    max-height: 219px;
-    max-width: 363px;
+    width: 100%;
 }
 
 .popular h2 {
@@ -417,8 +402,6 @@ nav a {
 
 @media screen and (max-width: 1312px) {
     .popular {
-        margin: auto;
-        max-width: 640px;
         padding-bottom: 90px;
     }
 
@@ -449,9 +432,10 @@ nav a {
         max-width: 480px;
     }
 
+
     .popular img {
-        max-width: 260px;
-    }
+        width: auto;
+    } 
 
     .popular h1 {
         font-size: 24px;
@@ -495,8 +479,6 @@ nav a {
 
 @media screen and (max-width: 1312px) {
     .story {
-        margin: auto;
-        max-width: 640px;
         padding-bottom: 92px;
         padding-top: 92px;
     }
@@ -517,7 +499,7 @@ nav a {
 
 .play01 img, .play02 img {
     max-height: 460px;
-    max-width: 640px;
+
 }
 
 .play01 {
@@ -528,7 +510,6 @@ nav a {
 .play01_txt {
     margin-left: 116px;
     margin-right: 115px;
-    max-width: 640px;
 }
 
 .play02 {
@@ -540,7 +521,6 @@ nav a {
 .play02_txt {
     margin-left: 116px;
     margin-right: 115px;
-    max-width: 640px;
 }
 
 .play01_txt p, .play02_txt p {
@@ -557,19 +537,44 @@ nav a {
 @media screen and (max-width: 1312px) { 
     .play {
         margin: auto;
-        max-width: 640px;
+        padding-bottom: 25px;
     }
+
     .play01, .play02 {
         display: flex;
         flex-direction: column;
         margin: auto;
-        max-width: 640px;
-    } 
+    }
+    
+    .play img {
+        max-height: 300px;
+    }
 
     .play01_txt, .play02_txt {
         height: 400px;
-        margin: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0px;
     }
+
+    .play h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .play p {
+        margin-bottom: 70px;
+    }
+
+    .play02 h2 {
+        margin-bottom: 15px;
+    }
+
+    .play02 {
+        padding-bottom: 40px;
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {
