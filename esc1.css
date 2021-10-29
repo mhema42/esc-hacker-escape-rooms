@@ -344,6 +344,13 @@ nav a {
     padding-bottom: 200px;
     margin: auto;
     text-align: center;
+
+}
+
+.popular ul {
+    display: inline-block;
+    margin: auto;
+    max-width: 1280px;
 }
 
 .popular h1 {
@@ -407,9 +414,13 @@ nav a {
     top: 70px;
 }
 
+.cards {
+    overflow: auto;
+  }
+
 @media screen and (max-width: 1312px) {
     .popular {
-        padding-bottom: 90px;
+        padding-bottom: 100px;
     }
 
     .popular h1 {
@@ -425,11 +436,11 @@ nav a {
         font-weight: 700;
         position: relative;
         text-decoration: underline;
-        top: 95px;
+        top: 100px;
     }
 
     .popular .secondary_button {
-        top: -30px;
+        top: -25px;
         position: relative;
     }
 }
