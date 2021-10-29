@@ -112,6 +112,12 @@ header :nth-child(2) {
     }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+}
+
 /* navigation bar */
 nav {
     align-content: center;
@@ -166,6 +172,12 @@ nav a {
 
     nav ul {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
     }
 }
     
@@ -246,6 +258,12 @@ nav a {
       }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+}
+
 /* testimonials */
 .quote {
     background-color: white;
@@ -270,7 +288,7 @@ nav a {
     margin-bottom: 30px;
     margin-right: 15px;
     position: relative;
-    width: 96,26px;
+    max-width: 96,26px;
 }
 
 .quote em {
@@ -283,7 +301,7 @@ nav a {
     display: inline-block;
     font-size: 18px;
     position: relative;
-    width: 310px;
+    max-width: 310px;
 }
 
 @media screen and (max-width: 1312px) {
@@ -315,6 +333,17 @@ nav a {
     }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+
+    .quote p {
+        position: relative;
+        left: 0px;
+    }
+}
+
 /* popular challenges */
 .popular {
     background-color: white;
@@ -332,8 +361,8 @@ nav a {
 }
 
 .popular img {
-    height: 219px;
-    width: 363px;
+    max-height: 219px;
+    max-width: 363px;
 }
 
 .popular h2 {
@@ -350,7 +379,7 @@ nav a {
     display: inline-block;
     margin: 10px;
     text-align: left;
-    width: 363px;
+    max-width: 363px;
 }
 
 .star {
@@ -415,6 +444,27 @@ nav a {
     }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+
+    .popular img {
+        max-width: 363px;
+    }
+
+    .popular h1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 80px;
+        margin-top: 0px;
+    }
+
+    .popular h2 {
+        font-size: 18px;
+    }
+}
+
 /* about */
 .story {
     background-color: #011827;
@@ -440,7 +490,7 @@ nav a {
     padding-bottom: 17px;
     padding-top: 17px;
     text-align: center;
-    width: 302px;
+    max-width: 302px;
 }
 
 @media screen and (max-width: 1312px) {
@@ -449,6 +499,12 @@ nav a {
         max-width: 640px;
         padding-bottom: 92px;
         padding-top: 92px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
     }
 }
 
@@ -516,6 +572,12 @@ nav a {
     }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+}
+
 /* footer */
 footer {
     background-color: #011827;
@@ -573,5 +635,11 @@ footer {
 
     .social_media {
         margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
     }
 }
