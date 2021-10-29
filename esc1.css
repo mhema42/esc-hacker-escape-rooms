@@ -14,9 +14,26 @@ body {
     background-color: gray;
 }
 
+.container {
+    margin: auto;
+    max-width: 1280px;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0px;
+}
+
+.primary_button {
+    background-color: #E3170A;
+    color: white;
+}
+
+.secondary_button {
+    background-color: #8ACFE5;
+    color: #011827;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .primary_button, .secondary_button {
@@ -28,40 +45,26 @@ ul {
     padding-right: 58px;
 }
 
-.secondary_button {
-    padding-left: 55px;
-    padding-right: 55px;
-}
-
-
-.primary_button {
+.small_button {
+    bottom: 10px;
     background-color: #E3170A;
+    border-radius: 4px;
     color: white;
-}
-
-.primary_button_dark {
-    background-color: transparent;
-    border-color: #8ACFE5;
-    border-style: solid;
-    color: #8ACFE5;
-}
-
-.secondary_button {
-    background-color: #8ACFE5;
-    color: #011827;
-}
-
-.container {
-    margin: auto;
-    max-width: 1280px;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative; 
+    right: 10px;
 }
 
 @media screen and (max-width: 1312px) {
-body {
-    background-color: gray;
-    /*
-    background-color: #011827; */
-}
+    body {
+        background-color: gray;
+    }
 }
 
 /* header */
@@ -74,7 +77,7 @@ header {
 }
 
 header img {
-    height: 82px;
+    height: 90px;
     left: 27px;
     position: relative;
     top: 26px;
@@ -88,25 +91,22 @@ header :nth-child(2) {
     margin-top: 61px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1312px) {
     header {
         display: flex;
+        margin: auto;
+        max-width: 640px;
     }
 
     header img {
-        vertical-align: bottom;
-        width: 100px;
-    }
-
-    header a {
-        margin-top: 15px;
-        margin-left: 15px;
+        left: 20px;
+        top: 20px;
     }
 
     header :nth-child(2) {
-        font-size: 24rem;
-        margin-left: 10px;
-        margin-top: 5px;
+        font-size: 1rem;
+        margin-left: 30px;
+        margin-top: 23px;
         width: 100px;
     }
 }
@@ -123,7 +123,7 @@ nav {
 nav ul {
     margin: auto;
     margin-bottom: 0px;
-    width: 950px;
+    max-width: 950px;
 }
 
 nav li {
@@ -139,9 +139,26 @@ nav a {
 }
 
 @media screen and (max-width: 1312px) {
+    nav {
+        margin: auto;
+        max-width: 640px;
+    }
+
     nav li {
-        padding-left: 1px;
-        padding-right: 1px;
+        display: inline;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        margin-bottom: 30px;
     }
 }
     
@@ -149,6 +166,12 @@ nav a {
 .hero {
     background-color: white;
     text-align: center;
+}
+
+.hero img {
+    object-fit: cover;
+    object-position: center;
+    height: 500px;
 }
 
 .hero ul {
@@ -164,7 +187,7 @@ nav a {
     display: inline-block;
 }
 
-.hero .primary_button, .hero .secondary_button{
+.hero .primary_button, .hero .secondary_button {
     bottom: 45px;
     position: relative;
 }
@@ -173,6 +196,13 @@ nav a {
     .hero {
         margin: auto;
         max-width: 640px;
+    }
+
+    .hero img {
+        background-color: #011827;
+        object-fit: cover;
+        object-position: center;
+        height: 250px;
     }
 
     .hero li {
@@ -198,7 +228,15 @@ nav a {
     .hero .secondary_button {
         bottom: 0px;
     }
+}
 
+@media screen and (max-width: 640px) {
+    .hero img {
+        object-fit: cover;
+        object-position: center;
+        padding-top: 30px;
+        height: 274px;
+      }
 }
 
 /* testimonials */
@@ -260,6 +298,10 @@ nav a {
 }
 
 @media screen and (max-width: 563px) {
+    .quote ul {
+        padding-bottom: 0px;
+    }
+
     .quote p {
         position: relative;
         left: 80px;
@@ -270,14 +312,16 @@ nav a {
 .popular {
     background-color: white;
     padding-bottom: 200px;
+    margin: auto;
+    max-width: 1312px;
     text-align: center;
 }
 
 .popular h1 {
     font-size: 36px;
     font-weight: 400;
-    margin-top: 0px;
     margin-bottom: 80px;
+    margin-top: 0px;
 }
 
 .popular img {
@@ -291,7 +335,7 @@ nav a {
     margin: 3px;
     margin-bottom: 0px;
     margin-left: 20px;
-    }
+}
 
 .popular li {
     border-radius: 8px;
@@ -330,31 +374,37 @@ nav a {
     margin: 18px;
 }
 
-.small_button {
-bottom: 10px;
-background-color: #E3170A;
-border-radius: 4px;
-color: white;
-float: right;
-font-size: 16px;
-font-weight: 700;
-margin-top: 10px;
-padding: 12px;
-padding-left: 35px;
-padding-right: 35px;
-position: relative; 
-right: 10px;
-}
-
 .popular .primary_button, .popular .secondary_button {
     position: relative;
     top: 70px;
 }
 
 @media screen and (max-width: 1312px) {
-    h1 {
+    .popular {
+        margin: auto;
+        max-width: 640px;
+    }
+
+    .popular h1 {
         font-size: 32px;
+        margin-bottom: 30px;
     } 
+
+    .popular .primary_button {
+        background-color: white;
+        color: #36769d;
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        text-decoration: underline;
+        top: 200px;
+    }
+
+    .popular .secondary_button {
+        bottom: 500px;
+        position: relative;
+    }
 }
 
 /* about */
@@ -369,8 +419,8 @@ right: 10px;
     font-size: 28px;
     margin: auto;
     margin-bottom: 33px;
-    text-align: center;
     max-width: 632px;
+    text-align: center;
 }
 
 .story a {
@@ -383,22 +433,6 @@ right: 10px;
     text-align: center;
     width: 302px;
 }
-
-.small_button {
-    bottom: 10px;
-    background-color: #E3170A;
-    border-radius: 4px;
-    color: white;
-    float: right;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 10px;
-    padding: 12px;
-    padding-left: 35px;
-    padding-right: 35px;
-    position: relative; 
-    right: 10px;
-    }
 
 @media screen and (max-width: 1312px) {
     .story {
@@ -451,11 +485,7 @@ right: 10px;
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1312px) {
-    /* .play {
-        background-color: white;
-    } */
-    
+@media screen and (max-width: 1312px) { 
     .play01, .play02 {
         display: flex;
         flex-direction: column;
@@ -477,15 +507,15 @@ footer {
 }
 
 footer h3, footer p, footer a {
-    margin-top: 0px;
     color: white;
+    margin-top: 0px;
 }
 
 .about {
     margin: 150px;
     margin-bottom: 185px;
     margin-left: 110px;
-    width: 440px;
+    max-width: 440px;
 }
 
 .site_map, .social_media {
@@ -527,5 +557,4 @@ footer {
     .social_media {
         margin-bottom: 65px;
     }
-
 }
