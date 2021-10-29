@@ -73,7 +73,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
     .secondary_button {
         padding-left: 30px;
         padding-right: 30px;
@@ -367,7 +367,7 @@ nav a {
 
 .popular li {
     border-radius: 8px;
-    box-shadow: 0px 0px 10px lightgray;
+    box-shadow: 0px 0px 10px #B6BDB5;
     display: inline-block;
     margin: 10px;
     text-align: left;
@@ -453,7 +453,13 @@ nav a {
     .popular h2 {
         font-size: 18px;
     }
+}
 
+@media screen and (max-width: 350px) {
+    .popular h1 {
+        max-width: 480px;
+        margin-bottom: 30px;
+    }
 }
 
 /* about */
@@ -592,15 +598,21 @@ nav a {
         padding-right: 25px;
     }
 
+    .play02 {
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .play01 {
-        padding-bottom: 150px;
+        padding-bottom: 120px;
     }
 
     .play02 {
-        padding-bottom: 110px;
+        padding-bottom: 80px;
     }
-
 }
+
 
 /* footer */
 footer {
