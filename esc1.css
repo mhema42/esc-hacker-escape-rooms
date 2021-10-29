@@ -32,6 +32,10 @@ ul {
     padding-right: 58px;
 }
 
+.primary_button:hover, .secondary_button:hover, .small_button:hover {
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
 .secondary_button {
     background-color: #8ACFE5;
     color: #011827;
@@ -154,6 +158,10 @@ nav li {
 
 nav a {
     color: white;
+}
+
+nav a:hover {
+    color: #8ACFE5;
 }
 
 @media screen and (max-width: 1312px) {
@@ -344,13 +352,6 @@ nav a {
     padding-bottom: 200px;
     margin: auto;
     text-align: center;
-
-}
-
-.popular ul {
-    display: inline-block;
-    margin: auto;
-    max-width: 1280px;
 }
 
 .popular h1 {
@@ -360,11 +361,27 @@ nav a {
     margin-top: 0px;
 }
 
-.popular img {
+.cards {
+    margin: auto;
+}
+
+.card {
+    max-width: 363px;
+}
+
+.cards li {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #B6BDB5;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+.cards img {
     width: 100%;
 }
 
-.popular h2 {
+.cards h2 {
     font-size: 28px;
     font-weight: 400;
     margin: 3px;
@@ -372,25 +389,15 @@ nav a {
     margin-left: 20px;
 }
 
-.popular li {
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px #B6BDB5;
-    display: inline-block;
-    margin: 10px;
-    text-align: left;
-    max-width: 363px;
-}
-
 .star {
+    border: none;
     display: inline;
-    margin-left: 15px;
-    margin-right: 92px;
+    position: relative;
+    left: 15px;
 }
 
 .star li {
-    border: none;
     box-shadow: none;
-    display: inline;
     margin: 3px;
 }
 
@@ -399,9 +406,10 @@ nav a {
     width: 15px;
 }
 
-.popular li :nth-child(4), .star {
+.popular p:first-of-type {
     display: inline;
     font-size: 14px;
+    margin-left: 100px;
 }
 
 .popular p {
@@ -411,12 +419,8 @@ nav a {
 
 .popular .primary_button, .popular .secondary_button {
     position: relative;
-    top: 70px;
+    top: 100px;
 }
-
-.cards {
-    overflow: auto;
-  }
 
 @media screen and (max-width: 1312px) {
     .popular {
@@ -470,10 +474,20 @@ nav a {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     .popular h1 {
         max-width: 480px;
         margin-bottom: 30px;
+    }
+
+    .popular p:first-of-type {
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .popular p:first-of-type {
+        margin-left: 30px;
     }
 }
 
@@ -525,38 +539,38 @@ nav a {
     padding-bottom: 180px;
 }
 
-.play01 img, .play02 img {
+.play_01 img, .play_02 img {
     max-height: 460px;
 
 }
 
-.play01 {
+.play_01 {
     background-color: white;
     display: flex;
 }
 
-.play01_txt {
+.play_01 .txt {
     margin-left: 116px;
     margin-right: 115px;
 }
 
-.play02 {
+.play_02 {
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
 }
 
-.play02_txt {
+.play_02 .txt {
     margin-left: 116px;
     margin-right: 115px;
 }
 
-.play01_txt p, .play02_txt p {
+.play p {
     margin-top: 0px;
     margin-bottom: 45px;
 }
 
-.play01_txt h2, .play02_txt h2 {
+.play h2 {
     font-size: 32px;
     margin-top: 60px;
     margin-bottom: 10px;
@@ -568,13 +582,13 @@ nav a {
         padding-bottom: 25px;
     }
 
-    .play01, .play02 {
+    .play_01, .play_02 {
         display: flex;
         flex-direction: column;
         margin: auto;
     }
 
-    .play01_txt, .play02_txt {
+    .play .txt {
         height: 400px;
         margin-left: 15px;
         margin-right: 15px;
@@ -590,12 +604,12 @@ nav a {
         margin-bottom: 70px;
     }
 
-    .play02 h2 {
+    .play_02 h2 {
         margin-bottom: 15px;
     }
 
-    .play02 {
-        padding-bottom: 40px;
+    .play_01 {
+        padding-bottom: 10px;
     }
 }
 
@@ -613,19 +627,29 @@ nav a {
         padding-right: 25px;
     }
 
-    .play02 {
+    .play_02 {
         padding-bottom: 35px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .play01 {
-        padding-bottom: 120px;
-    }
-
-    .play02 {
+    .play_01 {
         padding-bottom: 80px;
     }
+
+    .play_02 {
+        padding-bottom: 50px;
+    }
+}
+
+    @media screen and (max-width: 320px) {
+        .play_01 {
+            padding-bottom: 140px;
+        }
+    
+        .play_02 {
+            padding-bottom: 100px;
+        }
 }
 
 
