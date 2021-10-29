@@ -27,22 +27,23 @@ ul {
 .primary_button {
     background-color: #E3170A;
     color: white;
+    padding: 20px;
+    padding-left: 58px;
+    padding-right: 58px;
 }
 
 .secondary_button {
     background-color: #8ACFE5;
     color: #011827;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 20px;
+    padding-left: 53px;
+    padding-right: 53px;
 }
 
 .primary_button, .secondary_button {
     border-radius: 4px;
     font-weight: 700;
     margin: 5px;
-    padding: 20px;
-    padding-left: 58px;
-    padding-right: 58px;
 }
 
 .small_button {
@@ -142,6 +143,12 @@ nav a {
     nav {
         margin: auto;
         max-width: 640px;
+        padding-top: 25px;
+    }
+
+    nav ul {
+        margin-bottom: 15px;
+        margin-top: 0px;
     }
 
     nav li {
@@ -205,14 +212,14 @@ nav a {
         height: 250px;
     }
 
-    .hero li {
-        display: block;
-        margin: auto;
-    }
-
     .hero ul {
         margin-bottom: 0px;
         padding-bottom: 130px;
+    }
+
+    .hero li {
+        display: block;
+        margin: auto;
     }
 
     .hero .primary_button {
@@ -383,6 +390,7 @@ nav a {
     .popular {
         margin: auto;
         max-width: 640px;
+        padding-bottom: 90px;
     }
 
     .popular h1 {
@@ -398,11 +406,11 @@ nav a {
         font-weight: 700;
         position: relative;
         text-decoration: underline;
-        top: 200px;
+        top: 95px;
     }
 
     .popular .secondary_button {
-        bottom: 500px;
+        top: -30px;
         position: relative;
     }
 }
@@ -418,18 +426,19 @@ nav a {
     color: white;
     font-size: 28px;
     margin: auto;
-    margin-bottom: 33px;
+    margin-bottom: 45px;
     max-width: 632px;
     text-align: center;
 }
 
 .story a {
     border-style: solid;
+    border-radius: 4px;
     color: #8ACFE5;
     display: block;
     margin: auto;
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-top: 17px;
     text-align: center;
     width: 302px;
 }
@@ -438,12 +447,16 @@ nav a {
     .story {
         margin: auto;
         max-width: 640px;
+        padding-bottom: 92px;
+        padding-top: 92px;
     }
 }
 
 /* play */
 .play {
+    background-color: white;
     margin-bottom: 0px;
+    padding-bottom: 180px;
 }
 
 .play01 img, .play02 img {
@@ -476,7 +489,7 @@ nav a {
 
 .play01_txt p, .play02_txt p {
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .play01_txt h2, .play02_txt h2 {
@@ -486,6 +499,10 @@ nav a {
 }
 
 @media screen and (max-width: 1312px) { 
+    .play {
+        margin: auto;
+        max-width: 640px;
+    }
     .play01, .play02 {
         display: flex;
         flex-direction: column;
