@@ -445,12 +445,12 @@ nav a {
 }
 
 @media screen and (max-width: 480px) {
-    header {
+    .popular {
         max-width: 480px;
     }
 
     .popular img {
-        max-width: 363px;
+        max-width: 260px;
     }
 
     .popular h1 {
@@ -573,9 +573,15 @@ nav a {
 }
 
 @media screen and (max-width: 480px) {
-    header {
+    .play {
         max-width: 480px;
     }
+
+    .play .primary_button {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
 }
 
 /* footer */
