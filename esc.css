@@ -1,145 +1,703 @@
 /* overall */
-body {
-    display: grid;
-    background-color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-a {
-    padding: 1rem;
+* {
     text-decoration: none;
 }
 
-/* top menu */
-.logo {
-    background-color: yellow;
-    font-size: 1rem;
-    grid-column: 1 / 13;
-}
-
-.logo a:nth-child(3) {
-    ;
-    color:red;
-}
-
-@media screen and (max-width: 400px) {
-    .logo {
-
-    }
-    .logo a:nth-child(2) {
-        color: red;
-    }
-
-    .logo a:nth-child(3) {
-        margin-left: 200px;
-        grid-column-start: 1;
-        color:blue;
-    }
-}
-
-.logo img {
-    vertical-align: middle;
-    width: 60px;
-}
-
-.logo a {
-    margin: 0px;
-    padding: 0px;
-}
-
-.menu {
-    background-color: red;
-    display: inline-block;
-    grid-column: 1 / 13;
-    margin: auto;
-    width: auto;
-    text-align: center;
-}
-
-/* challenge image */
-.challange_image {
+html {
     background-color: gray;
-    display: inline-block;
-    grid-column: 1 / 13;
-    text-align: center;
+    color: black;
+    font-family: "roboto";
+    font-size: 24px;
 }
 
-.challange_image img {
-    max-width: 363px;
+body {
+    background-color: gray;
 }
 
-.challange_image a {
-    opacity: 80%;
-    background-color: #6558F5;
-    border-radius: 5px;
-    bottom: 25px;
-    color: white;
-    padding: 10px;
-    padding-left: 40px;
-    position: relative;
-}
-
-/* Testamonial card */
-.t_card_1 {
-    background-color: red;
-    grid-column: 2 / 7;
-}
-
-.t_card_2 {
-    background-color: blue;
-    grid-column: 7 / 12;
-}
-
-.t_card_1 img, .t_card_2 img {
-    float: left;
-    width:  7rem;
-}
-
-.t_card_1 :nth-child(2), .t_card_2 :nth-child(2) {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-right: 100px;
-    color: white;
-    font-size: 1.3rem;
-    font-style: italic;
-}
-
-.t_card_1 :nth-child(3), .t_card_2 :nth-child(3) {
-    margin-top: 5px;
-}
-
-
-/* Challange card */
-.challange_cards h1 {
-    grid-column: span 12;
+.container {
     margin: auto;
-    text-align: center;
+    max-width: 1280px;
 }
 
-.challange_cards {
-    grid-column-start: span 12;
-    display: flex;
-    margin: auto;
-    width: auto;
+ul {
+    list-style-type: none;
+    padding-left: 0px;
 }
 
-.c_card {
-    border-style: solid;
-    border-color:lightgray;
-    height: 400px;
-    width: 300px;
-    margin: 50px;
+.primary_button {
+    background-color: #E3170A;
+    color: white;
+    padding: 20px;
+    padding-left: 58px;
+    padding-right: 58px;
 }
 
-.c_card img {
-    height: 40%;
+.primary_button:hover, .secondary_button:hover, .small_button:hover {
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.secondary_button {
+    background-color: #8ACFE5;
+    color: #011827;
+    padding: 20px;
+    padding-left: 53px;
+    padding-right: 53px;
+}
+
+.primary_button, .secondary_button {
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.small_button {
+    bottom: 10px;
+    background-color: #E3170A;
+    border-radius: 4px;
+    color: white;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative; 
+    right: 10px;
+}
+
+@media screen and (max-width: 1312px) {
+    body {
+        background-color: gray;
+    }
+
+    .container {
+        margin: auto;
+        max-width: 640px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .secondary_button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* header */
+header {
+    background-color: #011827;
+    font-size: 1.66667rem;
+    font-weight: 700;
     margin: 0px;
+    max-width: 1280px;
+}
+
+header img {
+    height: 90px;
+    left: 27px;
+    position: relative;
+    top: 26px;
+    width: 128px;
+}
+
+header :nth-child(2) {
+    color: white;
+    position: relative;
+    margin-left: 35px;
+    margin-top: 61px;
+}
+
+@media screen and (max-width: 1312px) {
+    header {
+        display: flex;
+        margin: auto;
+    }
+
+    header img {
+        left: 20px;
+        top: 20px;
+    }
+
+    header :nth-child(2) {
+        font-size: 1rem;
+        margin-left: 30px;
+        margin-top: 23px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+}
+
+/* navigation bar */
+nav {
+    align-content: center;
+    display: flex;
+    background-color: #011827;
+    padding-top: 55px;
+    text-align: center;
+}
+
+nav ul {
+    margin: auto;
+    margin-bottom: 0px;
+    max-width: 950px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #8ACFE5;
+}
+
+@media screen and (max-width: 1312px) {
+    nav {
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    nav ul {
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+
+    nav li {
+        display: inline;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        margin-bottom: 30px;
+    }
+}
+    
+/* hero and challenge buttons */
+.hero {
+    background-color: white;
+    text-align: center;
+}
+
+.hero img {
+    object-fit: cover;
+    object-position: center;
+    height: 500px;
+}
+
+.hero ul {
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+}
+
+.hero img {
     width: 100%;
 }
 
-.c_card h1 {
-    margin-left: 10px;
-    font-size: 20px;
+.hero li {
+    display: inline-block;
 }
 
+.hero .primary_button, .hero .secondary_button {
+    bottom: 45px;
+    position: relative;
+}
+
+@media screen and (max-width: 1312px) {
+    .hero img {
+        background-color: #011827;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero ul {
+        margin-bottom: 0px;
+        padding-bottom: 130px;
+    }
+
+    .hero li {
+        display: block;
+        margin: auto;
+    }
+
+    .hero .primary_button {
+        background-color: white;
+        color: #36769d;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        text-decoration: underline;
+        top: 100px;
+    }
+
+    .hero .secondary_button {
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero img {
+        object-fit: cover;
+        object-position: center;
+        padding-top: 30px;
+        height: 274px;
+      }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+}
+
+/* testimonials */
+.quote {
+    background-color: white;
+    padding-top: 50px;
+}
+
+.quote ul {
+    display: flex;
+    margin: auto;
+    margin-right: 30px;
+    padding-bottom: 35px;
+}
+
+.quote li {
+    margin-left: 50px;
+}
+
+.quote img {
+    bottom: 12px;
+    float: left;
+    height: 107px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    position: relative;
+    max-width: 96,26px;
+}
+
+.quote em {
+    bottom: 45px;
+    position: relative;
+}
+
+.quote p {
+    bottom: 45px;
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 1312px) {
+    .quote img {
+        height: 72px;
+        position: relative;
+        bottom: 40px;
+        width: 73,34;
+    }
+
+    .quote ul :nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .quote ul {
+        padding-bottom: 0px;
+    }
+
+    .quote p {
+        position: relative;
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+
+    .quote p {
+        position: relative;
+        left: 0px;
+    }
+}
+
+/* popular challenges */
+.popular {
+    background-color: white;
+    padding-bottom: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.popular h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    margin-top: 0px;
+}
+
+
+.card_01, .card_02, .card_03 {
+    max-width: 363px;
+}
+
+.cards li {
+    border-radius: 8px;
+
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+.cards img {
+    max-width: 100%;
+}
+
+.card h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 3px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.star {
+    border: none;
+    display: inline;
+    position: relative;
+    left: 15px;
+}
+
+.star li {
+    box-shadow: none;
+    margin: 3px;
+}
+
+.star img {
+    height: 15px;
+    width: 15px;
+}
+
+.popular p:first-of-type {
+    display: inline;
+    font-size: 14px;
+    margin-left: 100px;
+}
+
+.popular p {
+    font-size: 18px;
+    margin: 18px;
+}
+
+.popular .primary_button, .popular .secondary_button {
+    position: relative;
+    top: 100px;
+}
+
+@media screen and (max-width: 1312px) {
+    .popular {
+        padding-bottom: 100px;
+    }
+
+    .popular h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    } 
+
+    .popular .primary_button {
+        background-color: white;
+        color: #36769d;
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        text-decoration: underline;
+        top: 100px;
+    }
+
+    .popular .secondary_button {
+        top: -25px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popular {
+        max-width: 480px;
+    }
+
+    .popular h1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 80px;
+        margin-top: 0px;
+    }
+
+    .popular h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .popular h1 {
+        max-width: 480px;
+        margin-bottom: 30px;
+    }
+
+    .popular p:first-of-type {
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .popular p:first-of-type {
+        margin-left: 30px;
+    }
+}
+
+/* about */
+.story {
+    background-color: #011827;
+    padding-bottom: 132px;
+    padding-top: 122px;
+}
+
+.story p {
+    color: white;
+    font-size: 28px;
+    margin: auto;
+    margin-bottom: 45px;
+    max-width: 632px;
+    text-align: center;
+}
+
+.story a {
+    border-style: solid;
+    border-radius: 4px;
+    color: #8ACFE5;
+    display: block;
+    margin: auto;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    text-align: center;
+    max-width: 302px;
+}
+
+@media screen and (max-width: 1312px) {
+    .story {
+        padding-bottom: 92px;
+        padding-top: 92px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+}
+
+/* play */
+.play {
+    background-color: white;
+    margin-bottom: 0px;
+    padding-bottom: 180px;
+}
+
+.play_01 img, .play_02 img {
+    max-height: 460px;
+
+}
+
+.play_01 {
+    background-color: white;
+    display: flex;
+}
+
+.play_01 .txt {
+    margin-left: 116px;
+    margin-right: 115px;
+}
+
+.play_02 {
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.play_02 .txt {
+    margin-left: 116px;
+    margin-right: 115px;
+}
+
+.play p {
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+.play h2 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1312px) { 
+    .play {
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    .play_01, .play_02 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .play .txt {
+        height: 400px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0px;
+    }
+
+    .play h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .play p {
+        margin-bottom: 70px;
+    }
+
+    .play_02 h2 {
+        margin-bottom: 15px;
+    }
+
+    .play_01 {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .play {
+        max-width: 480px;
+    }
+
+    .play img {
+        max-height: 300px;
+    }
+
+    .play .primary_button {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .play_02 {
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .play_01 {
+        padding-bottom: 80px;
+    }
+
+    .play_02 {
+        padding-bottom: 50px;
+    }
+}
+
+    @media screen and (max-width: 320px) {
+        .play_01 {
+            padding-bottom: 140px;
+        }
+    
+        .play_02 {
+            padding-bottom: 100px;
+        }
+}
+
+
+/* footer */
+footer {
+    background-color: #011827;
+    display: flex;
+    margin: 0px;
+}
+
+footer h3, footer p, footer a {
+    color: white;
+    margin-top: 0px;
+}
+
+.about {
+    margin: 150px;
+    margin-bottom: 185px;
+    margin-left: 110px;
+    max-width: 440px;
+}
+
+.site_map, .social_media {
+    margin-left: 55px;
+    margin-right: 70px;
+    margin-top: 150px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+footer {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1312px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        margin: 0px;
+    }
+
+    .about h3 {
+        margin-top: 45px;
+    }
+
+    .about, .site_map, .social_media {
+        margin: 18px;
+    }
+
+    .social_media {
+        margin-bottom: 65px;
+    }
+}

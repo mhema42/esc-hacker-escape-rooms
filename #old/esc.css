@@ -1,0 +1,145 @@
+/* overall */
+body {
+    display: grid;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+a {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* top menu */
+.logo {
+    background-color: yellow;
+    font-size: 1rem;
+    grid-column: 1 / 13;
+}
+
+.logo a:nth-child(3) {
+    ;
+    color:red;
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+
+    }
+    .logo a:nth-child(2) {
+        color: red;
+    }
+
+    .logo a:nth-child(3) {
+        margin-left: 200px;
+        grid-column-start: 1;
+        color:blue;
+    }
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 60px;
+}
+
+.logo a {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    background-color: red;
+    display: inline-block;
+    grid-column: 1 / 13;
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+/* challenge image */
+.challange_image {
+    background-color: gray;
+    display: inline-block;
+    grid-column: 1 / 13;
+    text-align: center;
+}
+
+.challange_image img {
+    max-width: 363px;
+}
+
+.challange_image a {
+    opacity: 80%;
+    background-color: #6558F5;
+    border-radius: 5px;
+    bottom: 25px;
+    color: white;
+    padding: 10px;
+    padding-left: 40px;
+    position: relative;
+}
+
+/* Testamonial card */
+.t_card_1 {
+    background-color: red;
+    grid-column: 2 / 7;
+}
+
+.t_card_2 {
+    background-color: blue;
+    grid-column: 7 / 12;
+}
+
+.t_card_1 img, .t_card_2 img {
+    float: left;
+    width:  7rem;
+}
+
+.t_card_1 :nth-child(2), .t_card_2 :nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-right: 100px;
+    color: white;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.t_card_1 :nth-child(3), .t_card_2 :nth-child(3) {
+    margin-top: 5px;
+}
+
+
+/* Challange card */
+.challange_cards h1 {
+    grid-column: span 12;
+    margin: auto;
+    text-align: center;
+}
+
+.challange_cards {
+    grid-column-start: span 12;
+    display: flex;
+    margin: auto;
+    width: auto;
+}
+
+.c_card {
+    border-style: solid;
+    border-color:lightgray;
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+}
+
+.c_card img {
+    height: 40%;
+    margin: 0px;
+    width: 100%;
+}
+
+.c_card h1 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+

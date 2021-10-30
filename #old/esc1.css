@@ -365,7 +365,7 @@ nav a:hover {
     margin: auto;
 }
 
-.card {
+.card_01, .card_02, .card_03 {
     max-width: 363px;
 }
 
@@ -378,7 +378,7 @@ nav a:hover {
 }
 
 .cards img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .cards h2 {
@@ -427,10 +427,6 @@ nav a:hover {
         padding-bottom: 100px;
     }
 
-    .cards img {
-        max-width: 100%;
-    }
-
     .popular h1 {
         font-size: 32px;
         margin-bottom: 30px;
@@ -457,10 +453,6 @@ nav a:hover {
     .popular {
         max-width: 480px;
     }
-
-    .popular img {
-        width: auto;
-    } 
 
     .popular h1 {
         font-size: 24px;
