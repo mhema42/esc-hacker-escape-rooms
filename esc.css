@@ -97,9 +97,9 @@ header img {
 
 header :nth-child(2) {
     color: white;
-    margin-left: 35px;
-    margin-top: 61px;
+    left: 40px;
     position: relative;
+    top: 10px;
 }
 
 /* header responsive */
@@ -192,6 +192,8 @@ nav a:hover {
 /* hero */
 .hero {
     background-color: white;
+    margin: auto;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -203,30 +205,15 @@ nav a:hover {
     width: 100%;
 }
 
-.hero ul {
-    margin: 0px;
-    padding-bottom: 0px;
+.hero a {
     position: relative;
     bottom: 25px;
-}
-
-.hero li {
-    display: inline;
 }
 
 /* hero responsive */
 @media screen and (max-width: 1312px) {
     .hero img {
         height: 250px;
-    }
-
-    .hero ul {
-        padding-bottom: 70px;
-    }
-
-    .hero li {
-        display: block;
-        margin: auto;
     }
 
     .hero .primary_button {
@@ -238,12 +225,16 @@ nav a:hover {
         padding-right: 90px;
         position: relative;
         text-decoration: underline;
-        top: 150px;
+        top: 120px;
+        width: 190px;
     }
 
     .hero .secondary_button {
+        display: block;
+        margin: auto;
         position: relative;
-        top: 50px;
+        top: 0px;
+        width: 210px;
     }
 }
 
