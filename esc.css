@@ -275,7 +275,7 @@ nav a:hover {
     position: relative;
     right: 110px;
     top: 110px;
-    width: 96,26px;
+    width: 96,63px;
 }
 
 .quote p {
@@ -287,7 +287,6 @@ nav a:hover {
     .quote .quote_02 {
         display: none;
     }
-}
 
     .quote img {
         height: 72px;
@@ -295,6 +294,7 @@ nav a:hover {
         right: 90px;
         width: 73,34;
     }
+}
 
 @media screen and (max-width: 563px) {
     .quote ul {
