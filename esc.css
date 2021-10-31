@@ -332,7 +332,7 @@ nav a:hover {
     max-width: 363px;
   }
 
-.card h2 {
+.popular h2 {
     font-size: 28px;
     font-weight: 400;
     margin: 3px;
@@ -368,13 +368,20 @@ nav a:hover {
 }
 
 .popular p {
-    bottom: 20px;
+    bottom: 10px;
     font-size: 18px;
     margin: 3px;
     margin-left: 18px;
     margin-right: 18px;
     position: relative;
     text-align: left;   
+}
+
+.small_button {
+    bottom: 20px;
+    float: right;
+    position: relative;
+    right: 20px;
 }
 
 .popular .primary_button, .popular .secondary_button {

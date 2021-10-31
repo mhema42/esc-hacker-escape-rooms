@@ -1,0 +1,75 @@
+.quote ul {
+    display: flex;
+    margin: 0;
+    margin-right: 30px;
+    padding-bottom: 35px;
+}
+
+.quote li:first-of-type{
+    margin-left: 110px;
+    margin-right: 0px;
+}
+
+.quote img {
+    bottom: 52px;
+    float: left;
+    height: 107px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    position: relative;
+    max-width: 96,26px;
+}
+
+.quote em {
+    display: inline-flexbox;
+    bottom: 45px;
+    position: relative;
+}
+
+.quote p {
+    bottom: 48px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 310px;
+    position: relative;
+}
+
+@media screen and (max-width: 1312px) {
+    .quote {
+        padding-top: 50px;
+    }
+    .quote li:first-of-type {
+        margin: auto;
+        max-width: 400px;
+    }
+    
+    .quote img {
+        height: 72px;
+        position: relative;
+        bottom: 40px;
+        width: 73,34;
+    }
+
+    .quote .quote_02 {
+        display: none;
+    }
+
+    .quote p {
+        max-width: 320px;
+        margin-bottom: 15px;  
+        position: relative;
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .quote p {
+        left: 0px;
+        width: 200px;
+    }
+
+    .quote img {
+        margin-bottom: 200px;
+    }
+}
