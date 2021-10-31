@@ -24,5 +24,3 @@ techniques
     - responsiv design
 
     px, rem
-
-1. create a index.html with meta tag for responsiv design
