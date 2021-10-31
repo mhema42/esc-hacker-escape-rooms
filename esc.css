@@ -230,10 +230,12 @@ nav a:hover {
     }
 
     .hero .primary_button {
-        background-color: white;
+        background-color: transparent;
         color: #36769d;
         font-size: 16px;
         font-weight: 700;
+        padding-left: 90px;
+        padding-right: 90px;
         position: relative;
         text-decoration: underline;
         top: 150px;
@@ -323,7 +325,7 @@ nav a:hover {
 
 .popular h1 {
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 400;   
     margin-bottom: 75px;
     margin-top: 0px;
 }
