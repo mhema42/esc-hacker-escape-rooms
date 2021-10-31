@@ -359,11 +359,11 @@ nav a:hover {
     }
 
 .popular p:first-of-type {
+    bottom: 40px;
+    float: right;
     font-size: 14px;
     position: relative;
-    bottom: 42px;
-    left: 225px;
-    text-align: right;
+    text-align: center;
     width: 100px;
 }
 
@@ -374,7 +374,7 @@ nav a:hover {
     margin-left: 18px;
     margin-right: 18px;
     position: relative;
-    text-align: left;
+    text-align: left;   
 }
 
 .popular .primary_button, .popular .secondary_button {
@@ -435,28 +435,11 @@ nav a:hover {
         max-width: 480px;
         margin-bottom: 30px;
     }
-
-    .popular p:first-of-type {
-        margin-left: 90px;
-    }
 }
 
 @media screen and (max-width: 350px) {
-    .carousel__viewport {
-        max-width: 200px;
-    }
-
-    .popular p:first-of-type {
-        position: relative;
-        left: 155px;
-    }
-
     .popular img {
         width: 300px;
-    }
-
-    .popular p:first-of-type {
-        margin-left: 30px;
     }
 }
 
