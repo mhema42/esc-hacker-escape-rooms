@@ -24,53 +24,47 @@ ul {
     padding-left: 0px;
 }
 
+.primary_button, .secondary_button {
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 20px;
+}
+
+/* overall buttons */
 .primary_button {
     background-color: #E3170A;
     color: white;
-    padding: 20px;
     padding-left: 58px;
     padding-right: 58px;
-}
-
-.primary_button:hover, .secondary_button:hover, .small_button:hover {
-    box-shadow: 0px 0px 5px 2px gray;
 }
 
 .secondary_button {
     background-color: #8ACFE5;
     color: #011827;
-    padding: 20px;
     padding-left: 53px;
     padding-right: 53px;
 }
 
-.primary_button, .secondary_button {
-    border-radius: 4px;
-    font-weight: 700;
-    margin: 5px;
-}
-
 .small_button {
-    bottom: 10px;
     background-color: #E3170A;
     border-radius: 4px;
+    bottom: 10px;
     color: white;
-    float: right;
     font-size: 16px;
     font-weight: 700;
     margin-top: 10px;
     padding: 12px;
     padding-left: 35px;
     padding-right: 35px;
-    position: relative; 
-    right: 10px;
 }
 
-@media screen and (max-width: 1312px) {
-    body {
-        background-color: gray;
-    }
+.primary_button:hover, .secondary_button:hover, .small_button:hover {
+    box-shadow: 0px 0px 5px 2px gray;
+}
 
+/* overall responsive */
+@media screen and (max-width: 1312px) {
     .container {
         margin: auto;
         max-width: 640px;
@@ -103,11 +97,12 @@ header img {
 
 header :nth-child(2) {
     color: white;
-    position: relative;
     margin-left: 35px;
     margin-top: 61px;
+    position: relative;
 }
 
+/* header responsive */
 @media screen and (max-width: 1312px) {
     header {
         display: flex;
@@ -136,8 +131,8 @@ header :nth-child(2) {
 /* navigation bar */
 nav {
     align-content: center;
-    display: flex;
     background-color: #011827;
+    display: flex;
     padding-top: 55px;
     text-align: center;
 }
@@ -164,6 +159,7 @@ nav a:hover {
     color: #8ACFE5;
 }
 
+/* navigation responsive */
 @media screen and (max-width: 1312px) {
     nav {
         margin: auto;
@@ -193,16 +189,17 @@ nav a:hover {
     }
 }
     
-/* hero and challenge buttons */
+/* hero */
 .hero {
     background-color: white;
     text-align: center;
 }
 
 .hero img {
+    background-color: #011827;
+    height: 500px;
     object-fit: cover;
     object-position: center;
-    height: 500px;
     width: 100%;
 }
 
@@ -210,29 +207,20 @@ nav a:hover {
     margin: 0px;
     padding-bottom: 0px;
     position: relative;
-    top: 20px;
+    bottom: 25px;
 }
 
 .hero li {
-    display: inline-block;
+    display: inline;
 }
 
-.hero .primary_button, .hero .secondary_button {
-    bottom: 45px;
-    position: relative;
-}
-
+/* hero responsive */
 @media screen and (max-width: 1312px) {
     .hero img {
-        background-color: #011827;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
         height: 250px;
     }
 
     .hero ul {
-        margin-bottom: 0px;
         padding-bottom: 70px;
     }
 
@@ -248,27 +236,22 @@ nav a:hover {
         font-weight: 700;
         position: relative;
         text-decoration: underline;
-        top: 100px;
+        top: 150px;
     }
 
     .hero .secondary_button {
-        bottom: 0px;
+        position: relative;
+        top: 50px;
     }
 }
 
 @media screen and (max-width: 640px) {
     .hero img {
+        height: 274px;
         object-fit: cover;
         object-position: center;
         padding-top: 30px;
-        height: 274px;
       }
-}
-
-@media screen and (max-width: 480px) {
-    header {
-        max-width: 480px;
-    }
 }
 
 /* testimonials */
@@ -312,15 +295,20 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 563px) {
-    .quote {
-        padding-bottom: 50px;
+    .quote img {
+        height: 72px;
+        position: relative;
+        right: 90px;
+        width: 73,34;
     }
 
+@media screen and (max-width: 563px) {
     .quote ul {
         bottom: 20px;
         margin-top: 0px;
+        padding-bottom: 0px;
         position: relative;
+        top: 10px;   
     }
 }
 
@@ -426,7 +414,7 @@ nav a:hover {
 
 @media screen and (max-width: 480px) {
     .popular {
-        margin-top: 10px;
+        margin-top: 0px;
         max-width: 480px;
     }
 
@@ -454,6 +442,15 @@ nav a:hover {
 }
 
 @media screen and (max-width: 350px) {
+    .carousel__viewport {
+        max-width: 200px;
+    }
+
+    .popular p:first-of-type {
+        position: relative;
+        left: 155px;
+    }
+
     .popular img {
         width: 300px;
     }
@@ -648,13 +645,9 @@ nav a:hover {
     }
   }
   
-  @media screen and (max-width: 350px) {
-    .carousel__slide {
-      max-width: 300px;
-    }
-  
-    .carousel__navigation-button {
-      bottom: 0px;
+  @media screen and (max-width: 400px) {
+      .carousel__navigation-button {
+      display: none;
     }
   }
 
