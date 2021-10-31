@@ -246,6 +246,19 @@ nav a:hover {
         object-position: center;
         padding-top: 30px;
       }
+
+      .hero .primary_button {
+        background-color: transparent;
+        color: #36769d;
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 80px;
+        padding-right: 80px;
+        position: relative;
+        text-decoration: underline;
+        top: 120px;
+        width: 190px;
+    }
 }
 
 /* testimonials */
@@ -301,10 +314,19 @@ nav a:hover {
 @media screen and (max-width: 563px) {
     .quote ul {
         bottom: 20px;
+        margin-left: 20px;
         margin-top: 0px;
         padding-bottom: 0px;
         position: relative;
-        top: 10px;   
+        top: 10px; 
+        max-width: 320px;  
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .quote ul {
+        margin-left: 0px;
+        max-width: 280px;  
     }
 }
 
@@ -352,7 +374,7 @@ nav a:hover {
     left: 6px;
     position: relative;
     width: 14px;
-    }
+}
 
 .popular p:first-of-type {
     bottom: 40px;
@@ -475,7 +497,7 @@ nav a:hover {
     99% {
       left: 0;
     }
-  }
+}
   
 @keyframes snap {
     96% {
@@ -628,7 +650,7 @@ nav a:hover {
     .carousel__viewport {
         left: 0px;
     }
-  }
+}
   
 @media screen and (max-width: 400px) {
     .carousel__navigation-button {
