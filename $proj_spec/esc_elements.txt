@@ -16,8 +16,7 @@ nav
 
 div (hero)
     <img> hacker
-    <ul>
-        <a> book room/challange
+    <a> online/on-site rooms/challanges
 
 article (quote)
     <ul>
@@ -27,14 +26,15 @@ article (quote)
 
 div (popular)
     <h1>
-    <ul> 3 challenge cards 
+    <ul> 3 challenge cards with slide function in responsive design
         <img> hacker
         <h2> titles
         <ul>
-            <img> rating stars
+            <a> <img> rating stars
         <p> text
-        <a> book room/challange
-    <a> to lists of rooms/challanges
+        <a> book rooms
+
+<a> online/on-site rooms/challanges
 
 article (story)
     <p> text
@@ -48,18 +48,18 @@ div (play)
             <a> book room/challange
         
 footer
-    div (about)
-        <h3> 
-        <p> text about
-    div (site_map)
-        <h3> text site map
-        <a> story
-        <a> contact
-        <a> legal
-        <a> play online
-        <a> play on-site
-    div (social_media)
-        <h3> social media
-        <a> facebook
-        <a> instagram
-        <a> twitter
+    <ul> (about)
+         <h3> 
+         <p> text about
+    <ul> (site_map)
+         <h3> text site map
+         <a> story
+         <a> contact
+         <a> legal
+         <a> play online
+         <a> play on-site
+    <ul> (social_media)
+         <h3> social media
+         <a> facebook
+         <a> instagram
+         <a> twitter
