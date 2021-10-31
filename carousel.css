@@ -223,4 +223,7 @@
     max-width: 300px;
   }
 
+  .carousel__navigation-button {
+    bottom: 0px;
+  }
 }
