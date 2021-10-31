@@ -83,10 +83,11 @@
 }
 
 .carousel {
+  margin: auto;
   margin-bottom: 0px;
   position: relative;
   padding: 0px;
-  padding-top: 500px;
+  padding-top: 470px;
   perspective: 100px;
 }
 
@@ -94,9 +95,9 @@
   margin: auto;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   bottom: 0;
-  left: 0;
+  left: 25px;
   display: flex;
   overflow-x: scroll;
   counter-reset: item;
@@ -211,10 +212,15 @@
     position: relative;
     transition: transform 0.1s;
   }
+  
+  .carousel__viewport {
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .carousel__slide {
     max-width: 300px;
   }
+
 }
