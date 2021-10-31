@@ -441,8 +441,8 @@ nav a:hover {
 
 @media screen and (max-width: 380px) {
     .popular h1 {
-        max-width: 480px;
         margin-bottom: 30px;
+        max-width: 480px;
     }
 }
 
@@ -468,7 +468,7 @@ nav a:hover {
     }
   }
   
-  @keyframes tostart {
+@keyframes tostart {
     75% {
       left: 0;
     }
@@ -483,7 +483,7 @@ nav a:hover {
     }
   }
   
-  @keyframes snap {
+@keyframes snap {
     96% {
       scroll-snap-align: center;
     }
@@ -496,152 +496,151 @@ nav a:hover {
     100% {
       scroll-snap-align: center;
     }
-  }
+}
   
-  .carousel_
-  * {
+.carousel_
+* {
     scrollbar-color: transparent transparent;
     scrollbar-width: 0px;
-  }
+}
   
-  *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 0;
-  }
+}
   
-  *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: transparent;
-  }
+}
   
-  *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
-  }
+}
   
-  * {
+* {
     -ms-overflow-style: none;
-  }
+}
   
-  .carousel ol, li {
+.carousel ol, li {
     list-style: none;
     margin: auto;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 0;
     max-width: 1280px ;
-  }
+    padding: 0;
+}
   
-  .carousel__slide {
+.carousel__slide {
     border-radius: 4px;
     box-shadow: 0px 0px 10px #B6BDB5;
     margin: 20px;
     max-width: 363px;
-  }
+}
   
-  .carousel {
+.carousel {
     margin: auto;
     margin-bottom: 0px;
-    position: relative;
     padding: 0px;
+    position: relative;
     padding-top: 470px;
     perspective: 100px;
-  }
+}
   
-  .carousel__viewport {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0px;
+.carousel__viewport {
     bottom: 0;
-    left: 25px;
-    display: flex;
-    overflow-x: scroll;
     counter-reset: item;
+    display: flex;
+    left: 25px;
+    margin: auto;
+    overflow-x: scroll;
+    position: absolute;
+    right: 0px;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-  }
-  
-  .carousel__slide {
-    position: relative;
-    flex: 100% 0 100%;
-    counter-increment: item;
-  }
-  
-  .carousel__snapper {
-    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    scroll-snap-align: center;
-  }
+}
   
-  @media (hover: hover) {
+.carousel__slide {
+    counter-increment: item;
+    flex: 100% 0 100%;
+    position: relative;
+}
+  
+.carousel__snapper {
+    left: 0;
+    position: absolute;
+    scroll-snap-align: center;
+    top: 0;
+    width: 100%;
+}
+  
+@media (hover: hover) {
     .carousel__snapper {
-      animation-name: tonext, snap;
-      animation-timing-function: ease;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+    }   
   
     .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart, snap;
+        animation-name: tostart, snap;
     }
-  }
+}
   
-  @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
     .carousel__snapper {
-      animation-name: none;
+        animation-name: none;
     }
-  }
+}
   
-  .carousel:hover .carousel__snapper,
-  .carousel:focus-within .carousel__snapper {
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
     animation-name: none;
-  }
+}
   
-  .carousel__navigation-list,
-  .carousel__navigation-item {
+.carousel__navigation-list,
+.carousel__navigation-item {
     display: inline;
-  }
+}
   
-  .carousel__navigation-button {
+.carousel__navigation-button {
     display: none;
-  }
+}
   
-  .carousel::before,
-  .carousel::after,
-  .carousel__prev,
-  .carousel__next {
-    display: none;
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+    display: none; 
+}
   
-  }
-  
-  @media screen and (max-width: 1312px) {
+@media screen and (max-width: 1312px) {
     .carousel__navigation-button {
-      color: #B6BDB5;
-      display: inline-block;
-      width: 0.2rem;
-      height: 0.2rem;
-      background-color: white;
-      background-clip: content-box;
-      border: 0.25rem solid transparent;
-      border-radius: 50%;
-      bottom: 5px;
-      box-shadow: 0 0 5px 1px;
-      font-size: 0;
-      position: relative;
-      transition: transform 0.1s;
+        background-clip: content-box;
+        background-color: white;
+        border: 0.25rem solid transparent;
+        border-radius: 50%;
+        bottom: 5px;
+        box-shadow: 0 0 5px 1px;
+        color: #B6BDB5;
+        display: inline-block;
+        font-size: 0;
+        height: 0.2rem;
+        position: relative;
+        transition: transform 0.1s;
+        width: 0.2rem;
     }
     
     .carousel__viewport {
-      left: 0px;
+        left: 0px;
     }
   }
   
-  @media screen and (max-width: 400px) {
-      .carousel__navigation-button {
-      display: none;
+@media screen and (max-width: 400px) {
+    .carousel__navigation-button {
+        display: none;
     }
-  }
+}
 
 /* about */
 .story {
@@ -665,10 +664,10 @@ nav a:hover {
     color: #8ACFE5;
     display: block;
     margin: auto;
+    max-width: 302px;
     padding-bottom: 17px;
     padding-top: 17px;
     text-align: center;
-    max-width: 302px;
 }
 
 .story a:hover {
@@ -733,8 +732,8 @@ nav a:hover {
 }
 
 .play p {
-    margin-top: 0px;
     margin-bottom: 45px;
+    margin-top: 0px;
 }
 
 .play h2 {
@@ -763,8 +762,8 @@ nav a:hover {
     }
 
     .play h2 {
-        margin-top: 30px;
         margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .play p {
@@ -809,16 +808,15 @@ nav a:hover {
     }
 }
 
-    @media screen and (max-width: 320px) {
-        .play_01 {
-            padding-bottom: 140px;
-        }
-    
-        .play_02 {
-            padding-bottom: 100px;
-        }
-}
+@media screen and (max-width: 320px) {
+    .play_01 {
+        padding-bottom: 140px;
+    }
 
+    .play_02 {
+        padding-bottom: 100px;
+    }
+}
 
 /* footer */
 footer {
