@@ -822,12 +822,20 @@ nav a:hover {
 footer {
     background-color: #011827;
     display: flex;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0px;
 }
 
 footer h3, footer p, footer a{
     color: white;
     margin-top: 0px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .about {
@@ -847,15 +855,8 @@ footer li:nth-child(5) {
     margin-top: 20px;
 }
 
-footer h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-footer {
-    font-size: 18px;
-    font-weight: 400;
+footer a:hover {
+    color: #36769d;
 }
 
 @media screen and (max-width: 1312px) {
