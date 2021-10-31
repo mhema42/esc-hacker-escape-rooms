@@ -280,13 +280,14 @@ nav a:hover {
 
 .quote ul {
     display: flex;
-    margin: auto;
+    margin: 0;
     margin-right: 30px;
     padding-bottom: 35px;
 }
 
-.quote li {
-    margin-left: 50px;
+.quote li:first-of-type{
+    margin-left: 110px;
+    margin-right: 0px;
 }
 
 .quote img {
@@ -305,11 +306,12 @@ nav a:hover {
 }
 
 .quote p {
-    bottom: 45px;
+    bottom: 48px;
     display: inline-block;
     font-size: 18px;
+    max-width: 310px;
     position: relative;
-    max-width: 300px;
+
 }
 
 @media screen and (max-width: 1312px) {
@@ -350,75 +352,69 @@ nav a:hover {
 /* popular challenges */
 .popular {
     background-color: white;
-    padding-bottom: 200px;
     margin: auto;
+    padding-bottom: 180px;
     text-align: center;
+    width: auto;
 }
 
 .popular h1 {
     font-size: 36px;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     margin-top: 0px;
 }
 
-
-.card_01, .card_02, .card_03 {
+.popular img {
     max-width: 363px;
-}
-
-.cards li {
-    border-radius: 8px;
-
-    display: inline-block;
-    margin: 10px;
-    text-align: left;
-}
-
-.cards img {
-    max-width: 100%;
-}
+  }
 
 .card h2 {
     font-size: 28px;
     font-weight: 400;
     margin: 3px;
     margin-bottom: 0px;
-    margin-left: 10px;
+    margin-left: 17px;
+    margin-top: 2px;
     text-align: left;
 }
 
-.star {
+.popular .star {
     border: none;
-    display: inline;
-    position: relative;
-    left: 15px;
-}
-
-.star li {
     box-shadow: none;
-    margin: 3px;
+    display: flex;
+    margin: 5px;
 }
-
-.star img {
+  
+.popular .star img {
+    bottom: 10px;
     height: 15px;
-    width: 15px;
-}
+    left: 6px;
+    position: relative;
+    width: 14px;
+    }
 
 .popular p:first-of-type {
-    display: inline;
     font-size: 14px;
-    margin-left: 100px;
+    position: relative;
+    bottom: 35px;
+    left: 5px;
+    text-align: right;
 }
 
 .popular p {
+    bottom: 20px;
     font-size: 18px;
-    margin: 18px;
+    margin: 0px;
+    margin-left: 18px;
+    margin-right: 18px;
+    position: relative;
+    text-align: left;
 }
 
 .popular .primary_button, .popular .secondary_button {
     position: relative;
-    top: 100px;
+    top: 70px;
 }
 
 @media screen and (max-width: 1312px) {
@@ -477,6 +473,10 @@ nav a:hover {
 }
 
 @media screen and (max-width: 350px) {
+    .popular img {
+        width: 300px;
+    }
+
     .popular p:first-of-type {
         margin-left: 30px;
     }
