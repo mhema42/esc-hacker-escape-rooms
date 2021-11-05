@@ -123,8 +123,9 @@ header :nth-child(2) {
 }
 
 @media screen and (max-width: 640px) {
-    .hb {
+    .ham_btn {
         align-items: flex-end;
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         padding-right: 20px;
@@ -132,7 +133,7 @@ header :nth-child(2) {
         top: 65px;
     }
 
-    .ham_button {
+    .ham_layer {
         background-color: white;
         border-color: white;
         border-radius: 8px;
@@ -147,7 +148,6 @@ header :nth-child(2) {
 @media screen and (max-width: 480px) {
     header {
         max-width: 480px;
-        height: 500px;
     }
 }
 
