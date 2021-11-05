@@ -1,0 +1,10 @@
+	1. Definiera vad jag vill göra
+	SKapa en dropdown meny som bara syns i mobilt läge
+	
+	2. Bryt ned i separata delar som behöver lösas
+		a. skapa en hamburger button som bara syns i mobilt läge
+		b. Eventlistener som upptäcker klick
+		c. En div som visas vid klick med menyinnehåålet
+		d. Animation på meny
+		
+	3. 
