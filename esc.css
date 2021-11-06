@@ -71,6 +71,13 @@ ul {
     }
 }
 
+@media screen and (max-width: 640px) {
+    .container {
+        bottom: 40px;
+        position: relative;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .secondary_button {
         padding-left: 30px;
@@ -177,6 +184,10 @@ nav a:hover {
     color: #8ACFE5;
 }
 
+#new_nav {
+    display: none;
+}
+
 /* navigation responsive */
 @media screen and (max-width: 1312px) {
     nav {
@@ -197,7 +208,21 @@ nav a:hover {
 
 @media screen and (max-width: 640px) {
     nav {
-        display: none;
+        visibility: hidden;
+        margin: auto;
+        width: 200px;
+        height: 400px;
+        left: 2.5%;
+        position: absolute;
+        text-align: center;
+        top: 50px;
+
+        width: 95%;
+        z-index: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 }
     

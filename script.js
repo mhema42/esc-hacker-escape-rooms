@@ -1,5 +1,7 @@
 
 document.getElementById("ham_btn").addEventListener("click", function() {
-    document.getElementById("nav_menu").style.position = "relative";
-    document.getElementById("nav_menu").style.display = "block";
+    let show_nav=document.getElementById("nav_menu");
+
+
+    show_nav.classlist.toggle("show");
 });
