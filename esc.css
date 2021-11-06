@@ -208,14 +208,15 @@ nav a:hover {
 
 @media screen and (max-width: 640px) {
     nav {
-        visibility: hidden;
+        display: none;
+        /* visibility: hidden; */
         margin: auto;
         width: 200px;
         height: 400px;
         left: 2.5%;
         position: absolute;
         text-align: center;
-        top: 50px;
+        top: 150px;
 
         width: 95%;
         z-index: 1;
