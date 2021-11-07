@@ -17,7 +17,6 @@ const style_menu = {
     zIndex: "1"
 };
 const style_close = {
-    animationDelay: "10s",
     animation: "fadeIn 3s",
     bottom: "450px",
     display: "block",
