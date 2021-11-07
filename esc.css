@@ -108,7 +108,7 @@ header :nth-child(2) {
     top: 10px;
 }
 
-/* header responsive */
+/* header responsive (+ hamburger button) */
 @media screen and (max-width: 1312px) {
     header {
         margin: auto;
@@ -151,9 +151,17 @@ header :nth-child(2) {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
     header {
         max-width: 480px;
+    }
+
+    .ham_btn {
+        padding-right: 8px;
+    }
+
+    .ham_layer {
+        width: 32px;
     }
 }
 
@@ -183,10 +191,6 @@ nav a:hover {
     color: #8ACFE5;
 }
 
-#new_nav {
-    display: none;
-}
-
 /* navigation responsive */
 @media screen and (max-width: 1312px) {
     nav {
@@ -214,7 +218,7 @@ nav a:hover {
     nav ul {
         flex-direction: column;
         position: relative;
-        top: 160px;
+        top: 200px;
     }
 
     nav li {
@@ -231,6 +235,12 @@ nav a:hover {
     from {opacity: 0;}
     to {opacity: 1;}
     }
+}
+
+    @media screen and (max-width: 380px) {
+        nav ul {
+            top: 60px;
+        }
 }
     
 /* hero */
@@ -362,15 +372,14 @@ nav a:hover {
         padding-bottom: 0px;
         position: relative;
         top: 10px; 
-        max-width: 320px;  
+        max-width: 260px;  
     }
 }
 
 @media screen and (max-width: 320px) {
-    .quote ul {
-        margin-left: 0px;
-        margin-right: 50px;
-        max-width: 280px;  
+    .quote .quote_01 {
+        margin-left: 50px;
+        max-width: 150px;  
     }
 }
 

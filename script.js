@@ -2,7 +2,7 @@
 const nav_menu = document.getElementById("nav_menu")
 const a = document.createElement('a');
 const style_menu = {
-    animation: "fadeIn 1s",
+    animation: "fadeIn 0.8s",
     boxShadow: "0px 0px 150px 1px white",
     display: "block",
     fontWeight: "700",
@@ -17,23 +17,25 @@ const style_menu = {
     zIndex: "1"
 };
 const style_close = {
-    animation: "fadeIn 1s",
+    animationDelay: "10s",
+    animation: "fadeIn 3s",
     bottom: "450px",
+    display: "block",
     float: "right",
     fontFamily: "Dongle",
     fontSize: "95px",
     fontWeight: "400",
     position: "relative",
     right: "30px",
-    transform: "scale(1.3, 1)"
+    transform: "scale(1.3, 1)",
 };
 
 // Listen to click on hamburger button(hb) and activate nav_menu in responsive design
 document.getElementById("ham_btn").addEventListener("click", function() {
-
+    
     Object.assign(nav_menu.style, style_menu);
 
-    // Create close button "X", in nav_menu
+    // Create close button "X", in nav_menu and hide
     a.setAttribute("href", "");
     a.innerHTML = "X";
     a.id = "close";
