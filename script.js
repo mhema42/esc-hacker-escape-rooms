@@ -18,7 +18,7 @@ const style_close = {
     bottom: "450px",
     float: "right",
     fontFamily: "Dongle",
-    fontSize: "80px",
+    fontSize: "95px",
     fontWeight: "400",
     position: "relative",
     right: "30px",
@@ -41,4 +41,12 @@ document.getElementById("ham_btn").addEventListener("click", function() {
     // set variable for close button and apply style
     const close = document.getElementById("close")
     Object.assign(close.style, style_close);
+
+    document.getElementsByTagName("BODY")[0].onresize = function() {myFunction()};
+        var x = 0;
+        function myFunction() {
+            window.location.href = "";
+            // var txt = x += 1;
+            // nav_menu.innerHTML = "hej";
+        } 
 });
