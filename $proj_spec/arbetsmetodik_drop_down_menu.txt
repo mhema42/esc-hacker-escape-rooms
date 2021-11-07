@@ -12,5 +12,6 @@
 		b. klart - Eventlistener upptäcker klick
 		c. En div syns, men inte som ruta ovanför ännu...
 		c. Display:none till display:block med JS när man klickar på hamburger button
+		d. Animation med css style, aktiverad med JS
 		
 

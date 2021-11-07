@@ -13,10 +13,11 @@ const style_menu = {
     textAlign: "center",
     top: "50px",
     width: "95%",
-    webkitAnimation: "fadeIn 1s",
+    webkitAnimation: "fadeIn 0.8s",
     zIndex: "1"
 };
 const style_close = {
+    animation: "fadeIn 1s",
     bottom: "450px",
     float: "right",
     fontFamily: "Dongle",
