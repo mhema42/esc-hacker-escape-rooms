@@ -131,8 +131,7 @@ header :nth-child(2) {
 
 @media screen and (max-width: 640px) {
     .ham_btn {
-        align-items: flex-end;
-        cursor: pointer;
+        align-items: flex-end;  
         display: flex;
         flex-direction: column;
         padding-right: 20px;
@@ -209,21 +208,17 @@ nav a:hover {
 @media screen and (max-width: 640px) {
     nav {
         display: none;
-        /* visibility: hidden; */
-        margin: auto;
-        width: 200px;
-        height: 400px;
-        left: 2.5%;
-        position: absolute;
-        text-align: center;
-        top: 150px;
-
-        width: 95%;
-        z-index: 1;
     }
 
     nav ul {
         flex-direction: column;
+        position: relative;
+        top: 200px;
+    }
+
+    nav li {
+        font-size: 36px;
+        padding: 30px;
     }
 }
     
