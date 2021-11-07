@@ -1,4 +1,5 @@
 // Set JS variables and objects
+const ham_btn = document.getElementById("ham_btn")
 const nav_menu = document.getElementById("nav_menu")
 const a = document.createElement('a');
 const style_menu = {
@@ -30,7 +31,7 @@ const style_close = {
 };
 
 // Listen to click on hamburger button(hb) and activate nav_menu in responsive design
-document.getElementById("ham_btn").addEventListener("click", function() {
+ham_btn.addEventListener("click", function() {
     
     Object.assign(nav_menu.style, style_menu);
 
