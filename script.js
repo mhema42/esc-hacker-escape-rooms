@@ -1,6 +1,6 @@
 // Set JS variables and objects
-const ham_btn = document.getElementById("ham_btn")
-const nav_menu = document.getElementById("nav_menu")
+const ham_btn = document.getElementById("ham_btn");
+const nav_menu = document.getElementById("nav_menu");
 const a = document.createElement('a');
 const style_menu = {
     animation: "fadeIn 0.8s",
